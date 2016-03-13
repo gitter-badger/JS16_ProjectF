@@ -1,7 +1,7 @@
 import React from 'react';
 let {Component} = React;
 import styles from './Start.css';
-import Stats from './stats/Stats.jsx';
+import Stats from './Stats/Stats.jsx';
 
 export default class Start extends Component {
   render() {
