@@ -12,18 +12,18 @@ export default class Stats extends Component {
       <div className={styles.stats}>
           <Row>
             <Column md={8} mdPush={2}>
-              <CharacterThumbnail/>
-              <CharacterThumbnail/>
-              <CharacterThumbnail/>
-              <CharacterThumbnail/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
             </Column>
           </Row>
           <Row>
             <Column md={8} mdPush={2}>
-              <CharacterThumbnail/>
-              <CharacterThumbnail/>
-              <CharacterThumbnail/>
-              <CharacterThumbnail/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
+              <CharacterThumbnail name="test" imageUrl="http://www.socialgiri.com/wp-content/uploads/2013/08/about-thumbnail-placeholder.png"/>
             </Column>
           </Row>
 
