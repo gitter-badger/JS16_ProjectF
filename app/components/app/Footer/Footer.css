@@ -1,0 +1,9 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.footer .bottom-line div {
+    display: inline-block;
+}
