@@ -3,7 +3,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import 'file?name=favicon.ico!./favicon.ico';
 import { Router, Route, IndexRoute } from 'react-router';
 
 import 'jquery';
