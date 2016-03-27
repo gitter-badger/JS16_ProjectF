@@ -34,8 +34,18 @@ var CharactersActions = {
             }, function(failed) {
               browserHistory.push('/characters');
             });
+    },
+    loadCharacterByID: function(id) {
+        Api
+          .get('characters/byId/'+id)
+          .then(function (character) {
+              // Dispatch an action containing the categories.
+              AppDispatcher.handleServerAction({
+                  actionType: Constants.RECEIVE_CHARACTER,
+                  data: character
+              });
+          });
     }
-
 };
 
 module.exports = CharactersActions;
