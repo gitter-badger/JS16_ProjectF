@@ -3,10 +3,9 @@ let {Component} = React;
 
 import { Row, Col } from 'react-bootstrap';
 
-import Store from '../../../stores/LandingPageStore';
-import Actions from '../../../actions/LandingPageActions';
-
-import CharacterThumbnail from '../CharacterThumbnail/CharacterThumbnail.jsx';
+import Store from '../../../stores/PLODStore';
+import Actions from '../../../actions/PLODActions';
+import Top3Bar from '../Top3Bar/Top3Bar';
 
 export default class Stats extends Component {
 
@@ -35,18 +34,13 @@ export default class Stats extends Component {
   }
 
   render() {
-  return (
+    return (
       <div>
         <Row className="home-plod">
+          <h1>Characters most likely to die</h1>
           <Col md={8} mdOffset={3}>
-            <div>{
-              this.state.characters.map(function (character) {
-                return <CharacterThumbnail key={character._id} id={character._id} name={character.name} imageUrl={character.imageLink}/>;
-              })
-            }
-            </div>
+            <Top3Bar data={this.state.characters}/>
           </Col>
-            <h1>Characters most likely to die</h1>
         </Row>
       </div>
     );

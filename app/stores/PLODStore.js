@@ -7,11 +7,11 @@ var assign = require('object-assign');
 var _plodCharacters = [];
 
 function setPlodCharacter(data) {
-    _plodCharacters = data.data;
+    _plodCharacters = data;
 }
 
 // Merge our store with Node's Event Emitter
-var LandingPageStore = assign({}, EventEmitter.prototype, {
+var PLODStore = assign({}, EventEmitter.prototype, {
 
     getPlodCharacters: function() {
         return _plodCharacters;
@@ -31,7 +31,7 @@ var LandingPageStore = assign({}, EventEmitter.prototype, {
 
 });
 
-LandingPageStore.dispatchToken = AppDispatcher.register(function (payload) {
+PLODStore.dispatchToken = AppDispatcher.register(function (payload) {
     var action = payload.action;
     switch (action.actionType) {
         case Constants.RECEIVE_PLOD_CHARACTERS:
@@ -41,7 +41,7 @@ LandingPageStore.dispatchToken = AppDispatcher.register(function (payload) {
             return true;
     }
 
-    LandingPageStore.emitChange();
+    PLODStore.emitChange();
 });
 
-module.exports = LandingPageStore;
+module.exports = PLODStore;
